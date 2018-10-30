@@ -1,0 +1,19 @@
+# partitioning paper into title, abstract, introduction, conclusion&future work, reference list
+import os, re
+import glob
+import logging
+
+class Paper:
+    def __init__(self, title, path):
+        self.root = path
+        self.title = title
+        self.abstract = ''
+        self.intro = ''
+        self.con_future = ''
+        self.reference = []
+        self.citation=[]
+        logging.info('open'+path)
+        with open(self.root) as source:
+            for line in source:
+                if line == 'Abstract'
+
